@@ -1,52 +1,95 @@
+# Prayatna 25 - Money Mentor 💸🤖
 
-Follow these steps:
+This is a full-stack AI-powered financial assistant built for the Prayatna 25 Hackathon.  
+It features a Gemini-integrated chatbot for financial Assitance, real-time risk analysis, and user profile recommendations.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## ✨ Features
 
-# Step 3: Install the necessary dependencies.
-npm i
+- 🧠 Conversational AI Chatbot(Gemini): Engages users in natural language conversations to address both basic and advanced investment queries in simple, jargon-free language
+- 💬 Personalized Investment Recommendations:Suggests mutual funds, stocks, and other financial products tailored to the user's profile and risk appetite.​
+- 📈 AI-Driven Financial Literacy Module:Offers bite-sized lessons, quizzes, and interactive guidance to educate first-time investors.​
+- 📁 Real-Time Market Insights:Provides up-to-date market data to assist users in making informed, data-driven investment decisions.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+
+---
+
+## 🗂️ Project Structure
+
+```
+Prayatna_25_Hackathon/
+├── src/              # React frontend using npm
+├── backend/          # Flask backend (Python-based)
+├── .env.example      # Environment variable example
+└── README.md         # You're here!
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🛠️ Prerequisites
 
-**Use GitHub Codespaces**
+- [Node.js & npm](https://nodejs.org/)
+- [Python 3.8+](https://www.python.org/) for the backend
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
-## What technologies are used for this project?
+## 🚀 Getting Started
 
-This project is built with:
+### 🔹 Clone the Repository
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+```bash
+git clone https://github.com/BargavanR/Prayatna_25_Hackathon.git
+cd Prayatna_25_Hackathon
+```
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/5b310a5e-b3a9-483d-b74f-8fa38dbb0611) and click on Share -> Publish.
+## 🌐 Frontend Setup (React + npm)
 
-## Can I connect a custom domain to my Lovable project?
+```bash
+npm install        # Install dependencies
+npm run dev        # Start development server
+```
 
-Yes it is!
+The React app should now be running on:  
+👉 [http://localhost:3000](http://localhost:3000)
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+---
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## 🧠 Backend Setup (Flask + Gemini API)
+
+```bash
+cd ../backend
+
+# Create and activate virtual environment
+python -m venv venv
+source venv/bin/activate    # On Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Create a .env file based on the example
+cp .env.example .env
+
+# Fill in your Gemini API key and other required variables in the .env file
+
+# Start the backend server
+python app.py
+```
+
+The Flask server will now be running at:  
+👉 [http://localhost:5000](http://localhost:5000)
+
+---
+
+## 🔑 Environment Variables
+
+Make sure to add the required keys in a `.env` file inside the `/backend` folder.
+
+Example:
+
+```env
+GEMINI_API_KEY=your_google_gemini_api_key
+SOME_OTHER_CONFIG=value
+```
