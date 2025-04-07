@@ -41,7 +41,7 @@ Prayatna_25_Hackathon/
 ### 🔹 Clone the Repository
 
 ```bash
-git clone https://github.com/BargavanR/Prayatna_25_Hackathon.git
+git clone https://github.com/BargavanR/Money_Mentor_Prayatna-2025.git
 cd Prayatna_25_Hackathon
 ```
 
