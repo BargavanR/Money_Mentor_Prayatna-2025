@@ -4,6 +4,7 @@
 
 This project is a full-stack, AI-powered financial assistant that secured the top spot at the Prayatna '25 Hackathon.
 It features a Gemini-integrated chatbot for intelligent financial assistance, real-time risk analysis, and personalized user profile recommendations — delivering smart, data-driven financial insights.
+
 ---
 
 ## ✨ Features
